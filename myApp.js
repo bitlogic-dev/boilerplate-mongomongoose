@@ -56,7 +56,7 @@ const queryChain = (done) => {
 /* You completed these challenges, let's go celebrate !
  */
 
-mongoose.connect('mongodb+srv://admin:tsBw8FjrV0YnjuQj@cluster0.mecfqph.mongodb.net/fcc-mongodb?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 //----- **DO NOT EDIT BELOW THIS LINE** ----------------------------------
 
 exports.PersonModel = Person;
